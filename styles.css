@@ -1,0 +1,29 @@
+/* Bookmark Indicator styles
+   Places a small blue "bookmark" marker to the left of any file that is bookmarked.
+*/
+
+/* Create a bit of left padding so our marker doesn't overlap */
+.nav-file.bh-bookmarked .nav-file-title {
+  position: relative;
+  padding-left: 0.75em;
+}
+
+/* The injected element that draws the bookmark shape */
+.nav-file-title > .bh-bookmark-pill {
+  display: inline-block;
+  width: 0.5em;
+  height: 0.8em;
+  margin-right: 0.25em;
+  margin-left: -0.6em; /* move into the left padding zone */
+  background: #3b82f6; /* blue-500-ish */
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+  vertical-align: middle;
+  opacity: 0.9;
+  border-radius: 1px;
+}
+
+/* Optional: slightly tint the row for visibility */
+.nav-file.bh-bookmarked .nav-file-title:hover {
+  background-color: var(--nav-item-background-hover);
+}
+
