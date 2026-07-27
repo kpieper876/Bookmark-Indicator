@@ -6,6 +6,6 @@
   "description": "Show a small blue bookmark marker beside bookmarked files in File Explorer.",
   "author": "Keith Pieper",
   "authorUrl": "https://www.keithpieper.com",
-  "isDesktopOnly": false,
+  "isDesktopOnly": false
 }
 
